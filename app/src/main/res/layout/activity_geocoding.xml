@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kawal.latitudelongitude.GeocodingActivity">
+
+
+    <TextView
+        android:id="@+id/addressTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Enter Address"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/addressET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addressTV"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginTop="11dp"
+        android:singleLine="true"
+        android:text="1600 Pennsylvania Ave NW Washington DC 20502" />
+
+    <Button
+        android:id="@+id/addressButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addressET"
+        android:layout_alignRight="@+id/addressET"
+        android:layout_below="@+id/addressET"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Show Lat/Long" />
+
+    <TextView
+        android:id="@+id/latLongTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addressButton"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="21dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>
